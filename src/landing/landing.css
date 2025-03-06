@@ -1,0 +1,495 @@
+/* .main-div-landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../asserts/gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} */
+ 
+
+.transperent-div{
+    width: 99%;
+    height: 100vh;
+    margin-left: 10px;
+    /* background-image: url('../asserts/transperent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+color: white;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); */
+        display: flex;
+    align-items: center;
+justify-content: center;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.main-div-landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../asserts/gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div-landing::before,
+.main-div-landing::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.main-div-landing::before {
+  background: radial-gradient(#6fa3ef 10%, transparent 80%);
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 50px 10px 5px #6fa3ef, 100px 30px 4px #6fa3ef,
+    150px 20px 6px #6fa3ef, 200px 40px 3px #6fa3ef, 250px 15px 5px #6fa3ef,
+    300px 25px 6px #6fa3ef, 350px 10px 4px #6fa3ef, 400px 50px 5px #6fa3ef;
+  animation: snowfall 5s linear infinite;
+}
+
+.main-div-landing::after {
+  background: radial-gradient(#6fa3ef 10%, transparent 80%);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 20px 30px 5px #6fa3ef, 70px 10px 4px #6fa3ef,
+    120px 25px 6px #6fa3ef, 180px 35px 3px #6fa3ef, 240px 20px 5px #6fa3ef,
+    290px 50px 6px #6fa3ef, 330px 15px 4px #6fa3ef, 380px 40px 5px #6fa3ef;
+  animation: snowfall 7s linear infinite;
+}
+
+/* .transperent-div {
+    width: 99%;
+    height: 100vh;
+    margin-left: 10px;
+    background-image: url('../asserts/transperent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.sock-main-div {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  height: 100px;
+  width: 80px;
+  right: 63px;
+}
+
+.sock-image {
+  height: 100%;
+  width: 100%;
+  transform: rotateX(120);
+}
+
+.gift-main-div {
+  position: absolute;
+  z-index: 0;
+  height: 100px;
+  width: 80px;
+  left: -45px;
+  bottom: 0px;
+}
+
+.snow-main-div {
+  position: absolute;
+  height: 100px;
+  opacity: 1;
+  width: 80px;
+  left: 107%;
+  bottom: 0px;
+}
+
+.snow-image {
+  height: 100%;
+  width: 100%;
+  transform: rotateX(180);
+}
+
+.header-div {
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-div {
+  height: 80%;
+  margin-left: 20px;
+}
+
+.image-logo {
+  height: 80%;
+}
+
+.sub-div-content {
+  width: 80%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+.content-div {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 10px;
+  height: 90%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-text-div {
+  height: 96%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.text-content-div {
+  height: 100%;
+  width: 80%;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.santa-img-div {
+  height: 100%;
+  width: 50%;
+}
+
+.santa-image {
+  height: 90%;
+  width: 100%;
+}
+
+.input-file-select {
+  margin: 5px;
+}
+
+.upload-btn-file {
+  background-color: #00873e;
+  height: 35px;
+  border: none;
+  color: white;
+  width: 100px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.loader-enable {
+  display: flex;
+}
+
+.loader-style-upload {
+  margin-top: 16px;
+}
+
+/* Responsive Styles */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+  .content-div {
+    width: 95%;
+  }
+  .content-text-div {
+    width: 55%;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+  .content-div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-text-div {
+    width: 90%;
+    margin: 0;
+  }
+  .santa-img-div {
+    width: 80%;
+    height: auto;
+  }
+  .text-content-div {
+    width: 100%;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .main-div-landing {
+    height: auto;
+    padding: 20px 0;
+  }
+  .sub-div-content {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  .content-div {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .content-text-div {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .santa-img-div {
+    width: 90%;
+    height: auto;
+  }
+  .header-div {
+    height: auto;
+    flex-direction: column;
+  }
+  .logo-div {
+    margin-left: 0;
+  }
+  .upload-btn-file {
+    width: 80%;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .sub-div-content {
+    width: 95%;
+  }
+  .text-content-div {
+    font-size: medium;
+  }
+  .upload-btn-file {
+    width: 100%;
+  }
+}
+/* Extra Small Screens (max-width: 375px) */
+@media (max-width: 375px) {
+  .main-div-landing {
+    height: auto;
+    padding: 15px 0;
+  }
+  .sub-div-content {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .content-div {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .content-text-div {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .text-content-div {
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+  }
+  .santa-img-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .santa-image {
+    width: 90%;
+    height: auto;
+  }
+  .header-div {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-div {
+    height: 60px;
+    margin: 5px 0;
+  }
+  .image-logo {
+    height: 50px;
+  }
+  .upload-btn-file {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .sock-main-div,
+  .gift-main-div,
+  .snow-main-div {
+    display: none;
+  }
+}
+/* Medium Screens (Tablets - 728px) */
+@media (max-width: 768px) {
+  .main-div-landing {
+    height: auto;
+    padding: 20px 0;
+  }
+  .sub-div-content {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .content-div {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+  }
+  .content-text-div {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .text-content-div {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+  .santa-img-div {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .santa-image {
+    width: 100%;
+    height: auto;
+  }
+  .header-div {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-div {
+    height: 70px;
+    margin: 10px 0;
+  }
+  .image-logo {
+    height: 60px;
+  }
+  .upload-btn-file {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .sock-main-div,
+  .gift-main-div,
+  .snow-main-div {
+    display: none;
+  }
+}
+
+/* Small Screens (Mobile - 425px) */
+@media (max-width: 425px) {
+  .main-div-landing {
+    height: auto;
+    padding: 10px 0;
+  }
+  .sub-div-content {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .content-div {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .content-text-div {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .text-content-div {
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+  }
+  .santa-img-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .santa-image {
+    width: 90%;
+    height: auto;
+  }
+  .header-div {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-div {
+    height: 60px;
+    margin: 5px 0;
+  }
+  .image-logo {
+    height: 50px;
+  }
+  .upload-btn-file {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
