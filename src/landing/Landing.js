@@ -158,12 +158,12 @@ export default function Landing() {
                   <CustomTabPanel value={value} index={0}>
                     <div>
                       <form onSubmit={handleSubmit}>
-                        <label>Select File :</label>
+                        <label>Select File (only csv format):</label>
                         <input
                           onChange={handleFileChange}
                           className="input-file-select"
                           type="file"
-                          accept=".csv, .xlsx"
+                          accept=".csv"
                         />
                         <div className="loader-enable">
                           <button

@@ -43,7 +43,7 @@ export const downloadFile = async () => {
         });
 
         if (response) {
-            const blob = new Blob([response.data], { type: "application/octet-stream" });
+            const blob = new Blob([response.data], { type: "text/csv" });
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
@@ -51,7 +51,7 @@ export const downloadFile = async () => {
             const date = new Date();
             const month = date.toLocaleString("en-US", { month: "short" });
             const year = date.getFullYear();
-            a.download = `Secret_Santa_Game_Result_${month}-${year}`;
+            a.download = `Secret_Santa_Game_Result_${month}-${year}.csv`;
 
             document.body.appendChild(a);
             a.click();
