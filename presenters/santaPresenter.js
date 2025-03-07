@@ -2,23 +2,23 @@ const db = require("../config/db");
 
 
 // Function to shuffle an array randomly
-// const shuffleArray = (array) => {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [array[i], array[j]] = [array[j], array[i]];
-//   }
-//   console.log("------shuffle",shuffleArray)
-//   return array;
-// };
 const shuffleArray = (array) => {
-    const clonedArray = [...array];  
-    for (let i = clonedArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [clonedArray[i], clonedArray[j]] = [clonedArray[j], clonedArray[i]];
-    }
-    console.log("------shuffle", clonedArray);
-    return clonedArray;
-  };
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  console.log("------shuffle",shuffleArray)
+  return array;
+};
+// const shuffleArray = (array) => {
+//     const clonedArray = [...array];  
+//     for (let i = clonedArray.length - 1; i > 0; i--) {
+//       const j = Math.floor(Math.random() * (i + 1));
+//       [clonedArray[i], clonedArray[j]] = [clonedArray[j], clonedArray[i]];
+//     }
+//     console.log("------shuffle", clonedArray);
+//     return clonedArray;
+//   };
 
 
 exports.getAssignments = (callback) => {
